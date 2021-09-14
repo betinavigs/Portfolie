@@ -1,0 +1,478 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        
+}
+    
+html{
+    scroll-behavior: smooth;
+}
+    
+/* Navbar */
+    
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+    
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+    
+.navbar ul li{
+    font-family: century;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+    
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+    
+.navbar ul li a:hover{
+    background-color: #9c533c;
+    color: white;
+    box-shadow: 0 0 10px rgb(156, 83, 60);
+}
+    
+/* home section */
+    
+#home{
+display: flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.5);
+height: 849px;
+justify-content: center;
+align-items: center;
+color: white;
+}
+    
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('leaves-5621679_1920.jpg') no-repeat center center/cover;
+    height: 955px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.logo{
+    height: 150px;
+    margin-top: -20px;
+}
+    
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1 px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 20%;
+}
+    
+.headings{
+    font-family: century;
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.headings2{
+    font-family: century;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0px;
+    font-weight: lighter;
+}
+    
+.btn{
+    padding: 20px 70px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6 ease;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+    
+.btn:hover{
+    cursor: pointer;
+    background-color: #9c533c;
+    color: white;
+    box-shadow: 0 0 5px #9c533c, 0 0 10px #9c533c, 0 0 15px #9c533c;
+    font-weight: bold;
+    border: none;
+}
+    
+/* about section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+}
+    
+#pic{
+    display: flex;
+}
+    
+#pic img{
+    height: 500px;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+    
+#intro{
+    padding: 20px;
+    width: 600px;
+    text-align: justify;
+    line-height: 1.8rem;
+    font-size: 25px;
+    line-height: 50px;
+}
+    
+/* portfolio section */
+    
+#portfolio{
+    background-color:navajowhite;
+    height: 900px;
+    margin-top: -50px;
+    background: url('leaves-5621679_1920.jpg') no-repeat center center/cover;
+}
+
+#heading_port{
+    color: #333333;
+    font-size: 4rem;
+    margin-left: 35%;
+}
+
+.card{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    color: blanchedalmond;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.card1{
+    height: 300px;
+    width: 200px;
+    padding-top: 20px;
+    margin-left: 75px;
+}
+
+.mobilillu{
+    height: 350px;
+    cursor: pointer;
+    margin-left: 20px; 
+}
+
+.mobilillu:hover{
+   opacity: 0.7;
+}
+
+.tvillu:hover{
+opacity: 0.7;
+}
+.illustrativt{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align:center;
+    font-size: 1.2rem;
+    background-color: #333333;
+    padding: 20px;
+    width: 250px;
+    line-height: 35px;
+    opacity: .8;   
+}
+
+#video{
+    margin-left: 75px;
+    margin-top: -12px;
+}
+
+.tvillu{
+    width: 400px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.card2{
+    margin-left:auto;
+    margin-right: 250px;
+    width: 200px;
+    padding-top: 90px;
+}
+
+.card3{
+    height: 300px;
+    margin-right: 200px;
+    width: 200px;
+    padding-top: 20px;
+}
+
+.tegninger{
+    height: 350px;
+    margin-right: -200px;
+}    
+
+.tegninger:hover{
+    opacity: 0.7;
+}
+
+.tegn{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align:center;
+    font-size: 1.2rem;
+    background-color: #333333;
+    padding: 20px;
+    width: 250px;
+    line-height: 35px;
+    opacity: .8;
+    margin-left: 60px;
+}
+
+/* CV */
+#cv{
+    height: 1100px;
+    margin-top: -50px;
+    background-color: #333333;
+    color: white;
+}
+
+
+
+.cards{
+    display: inline;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 2rem;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    background-color: rgba(212, 142, 96, 0.883);
+}
+        
+       
+.overskrift{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+    
+.andet_card{
+    margin-bottom: 50px;
+}
+    
+    
+/* contact section */
+    
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #333333;
+    color: white;
+    align-items: center;
+}
+    
+#form{
+    display: flex;
+    flex-direction: row;
+}
+    
+#form img{
+    height: 520px;
+    width: 400px;
+    margin: 10px;
+}
+    
+#info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    line-height: 50px;
+    font-size: 4rem;
+}
+
+.headings3{
+    font-size: 3rem;
+}
+    
+#info h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    align-items: center;
+     
+}
+    
+/*mobilstyling af hjemmesiden*/
+@media only screen and (max-width: 900px) {
+    /* mobil styling på Navbar */
+    .navbar ul{
+        margin: 10px 0px;
+    }
+    
+    .navbar ul li{
+        font-size: 0.8rem;
+    }
+    
+    .navbar ul li a{
+        padding: 8px 6px;
+    }
+
+    /*mobil styling af om mig*/
+    #pic {
+        display: block;
+    }
+ 
+    #pic img{
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro{
+        width: 90%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        line-height: 2.4rem;
+        font-size: 1.3rem;
+    }
+    
+    /* mobil styling af portfolio section */
+    #portfolio{
+        background-color:navajowhite;
+        height: 1900px;
+        margin-top: -50px;
+        background: url('leaves-5621679_1920.jpg') no-repeat center center/cover;
+    }
+
+    .headings3 {
+        font-family: century;
+        font-size: 3rem;
+        text-align: center;
+        margin: 50px 0px;
+        padding-top: 70px;
+    }
+
+    #heading_port{
+        color: #333333;
+        
+    }
+
+
+
+    .tvillu{
+        margin-top: 250px;
+        width: 350px;
+        display: flex
+    }
+
+    .tvillu_bil {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card3{
+        padding-top: 60px;
+    }
+
+    .tegn_bil {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tegninger{
+        height: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .tegninger:hover{
+        opacity: 0.7;
+    }
+
+    /* mobil styling på CV */
+    #cv{
+        height: 1350px;
+        margin-top: -5px;
+        padding-top: 50px;
+    }
+
+    .cards{
+        flex-direction: column;
+        font-size: 1rem;
+       
+    }
+       
+    .overskrift{
+        font-size: 2.3rem;
+        padding-top: 30px;
+    }
+    
+    .andet_card{
+        font-size: 1rem;
+    }
+
+    /* mobil styling af contact section */   
+    #form{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #form img{
+        width: 30%;
+        height: auto;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    
+    #info{
+
+        padding: 10px;
+        line-height: 30px;
+
+    }
+    
+    #info h2{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+}
